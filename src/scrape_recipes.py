@@ -161,6 +161,6 @@ if __name__ == '__main__':
         recipe_data = parse_and_extract_data_from(page_source)
         save_as_json(recipe_data)
 
-    teardown_selenium()
+    teardown_selenium(driver)
 
     shutil.make_archive('recipes', 'zip', 'output')
